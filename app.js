@@ -6,10 +6,14 @@ function onReady() {
         addToDoForm.addEventListener('submit', event => {
           event.preventDefault();
 
-          deleteButton.addEventListener('click', function(event){
+    // delete to-do
+    let deleteButton = document.createElement('button');
+
+      deleteButton.textContent = "Delete";
+      deleteButton.addEventListener('click', function(event){
         // console.log(event);
          // this.parentElement
-            toDoList.removeChild(this.parentElement);
+          toDoList.removeChild(this.parentElement);
           })
 
     // get the text
@@ -20,10 +24,6 @@ function onReady() {
 
     // create a new input
     let checkbox = document.createElement('input');
-
-    // delete to-do
-    let deleteButton = document.createElement('button');
-    deleteButton.textContent = "Delete";
 
     // set the input's type to checkbox
     checkbox.type = "checkbox";
