@@ -19,7 +19,7 @@ function onReady() {
     createNewToDo();
   });
 
-  function renderTheUI(); {
+  function renderTheUI() {
     const toDoList = document.getElementById('toDoList');
 
       toDoList.textContent = '';
