@@ -19,7 +19,7 @@ function onReady() {
     createNewToDo();
   });
 
-  renderTheUI();
+  function renderTheUI(); {
     const toDoList = document.getElementById('toDoList');
 
       toDoList.textContent = '';
@@ -35,6 +35,9 @@ function onReady() {
       newLi.appendChild(checkbox);
     });
 }
+}
+
+
 
 window.onload = function() {
   onReady();
