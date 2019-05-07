@@ -10,7 +10,7 @@ function onReady() {
       toDos.push({
       title: newToDoText.value,
       complete: false,
-      id: 0++,
+      id: ++id
     });
       newToDoText.value = '';
 
@@ -31,7 +31,7 @@ function onReady() {
     event.toDo.id();
 
     renderTheUI();
-          })
+  })
 
 
   function renderTheUI() {
